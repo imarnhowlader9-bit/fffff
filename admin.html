@@ -2,7 +2,7 @@
 <html lang="en">
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>MB BD Admin</title><link rel="stylesheet" href="styles.css"></head>
 <body><main class="shell section"><span class="section-label">ADMIN</span><h1>Order verification</h1><p class="modal-lead">Sign in with an administrator Firebase account.</p><button class="button button-primary" id="login">Sign in with Google</button><button class="button button-quiet" id="load">Load orders</button><div id="orders"></div></main>
-<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script><script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script><script src="/firebase-config.js"></script><script src="/auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script><script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script><script src="firebase-config.js"></script><script src="/auth.js"></script>
 <script>
 const escapeHtml = (value) => String(value).replace(/[&<>"']/g, (character) => ({ "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#039;" }[character]));
 document.getElementById("login").addEventListener("click", () => MBAuth.google());

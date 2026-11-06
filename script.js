@@ -157,7 +157,7 @@ function openOrderReview(order, duplicateKey) {
     try {
       const token = await MBAuth.token();
       if (!token) {
-        location.href = `/auth.html?return=${encodeURIComponent(location.pathname + location.search)}`;
+        location.href = `auth.html?return=${encodeURIComponent(location.pathname + location.search)}`;
         return;
       }
       const response = await fetch("/api/orders", {
